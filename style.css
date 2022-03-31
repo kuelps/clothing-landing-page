@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 0 20px;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 2px black;
+    z-index: 9999;
+}
+
+.logo {
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img {
+    width: 50px;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+#brand-name {
+    margin-left: 10px;
+    margin-top: 5px;
+    max-width: 100px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+nav {
+    font-weight: 500;
+}
+
+nav ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#hero h2 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+#hero input[type="email"] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+
+#hero input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    color: white;
+    background-color: black;
+}
+
+.btn {
+    padding: 0 20px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#product {
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    place-items: center;
+}
+
+#catalogue {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    gap: 10px;
+}
+
+.grid img {
+    width: 300px;
+    margin: auto;
+}
+
+.grid {
+    position: relative;
+}
+
+#price {
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    bottom: 40%;
+    z-index: -1;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover,
+.item5:hover,
+.item6:hover {
+    opacity: 0.3;
+}
+
+#video {
+    margin-top: 50px;
+}
+
+#features {
+    margin: auto;
+    width: 50%;
+    padding: 40px 0;
+}
+
+.easy,
+.shipping,
+.warranty {
+    display: flex;
+    flex-direction: row;
+}
+
+#features img {
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#logo-info {
+    text-align: center;
+    line-height: 150px;
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+#contact {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 2px black;
+
+}
+
+#logo-sosmed {
+    margin: 20px 50px;
+}
+
+
+@media (max-width: 800px) {
+
+    .logo img,
+    #brand-name {
+        margin-left: 0;
+    }
+
+    nav ul {
+        margin-right: 10px;
+    }
+
+    li {
+        margin-right: 10px;
+    }
+
+    #product {
+        margin: auto;
+        padding: 0;
+        display: inline-block;
+    }
+
+    #catalogue {
+        width: 200px;
+        grid-template-columns: 190px;
+        margin: auto;
+        padding-left: 5px;
+    }
+
+    #video {
+        width: 100%;
+    }
+
+    #features {
+        margin: auto;
+    }
+
+    #features img {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .easy,
+    .shipping,
+    .warranty {
+        display: block;
+    }
+
+    #logo-info {
+        font-size: 25px;
+        margin: auto;
+    }
+}
