@@ -204,12 +204,6 @@ a {
     margin: 20px 50px;
 }
 
-.twitter img,
-.instagram img {
-    width: 50px;
-}
-
-
 @media (max-width: 800px) {
 
     .logo img,
